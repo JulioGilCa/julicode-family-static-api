@@ -1,18 +1,30 @@
-# ![alt text](https://assets.breatheco.de/apis/img/images.php?blob&random&cat=icon&tags=breathecode,32) Family Static API
+<!--hide-->
+# API Estática Familiar
+<!--endhide-->
 
 ¡La familia "Jackson" necesita una API estática! Necesitamos construir las *estructuras de datos (data structures)* y crear un API endpoint para interactuar con él utilizando [Hoppscotch](https://hoppscotch.io/) (recomendado) o Postman.
 
+## 🌱 Cómo comenzar este proyecto
+
+Este proyecto viene con los archivos necesarios para comenzar a trabajar de inmediato.
+
+Recomendamos abrir este mismo repositorio usando una herramienta de aprovisionamiento como [Codespaces](https://4geeks.com/lesson/what-is-github-codespaces) (recomendado) o [Gitpod](https://4geeks.com/es/lesson/como-utilizar-gitpod). Alternativamente, puedes clonarlo en tu computadora local usando el comando `git clone`.
+
+Este es el repositorio que necesitas abrir:
+
+```txt
+https://github.com/breatheco-de/exercise-family-static-api
+```
+
 ## 💻 Instalación
 
-1. Por favor clona este repositorio para comenzar a codificar tu ejercicio o ábrelo en [gitpod.io haciendo click aqui](https://www.gitpod.io#https://github.com/breatheco-de/exercise-family-static-api) (recomendado).
+1. Instala las dependencias del proyecto `$ pipenv install`.
 
-2. Instala las dependencias del proyecto `$ pipenv install`.
+2. Entra dentro del **virtual environment** `$ pipenv shell`
 
-3. Entra dentro del **virtual environment** `$ pipenv shell`
+3. Inicio al servidor flask `$ pipenv run start`
 
-4. Inicio al servidor flask `$ pipenv run start`
-
-5. Prueba que el proyecto está correctamente terminado `$ pipenv run test`
+4. Prueba que el proyecto está correctamente terminado `$ pipenv run test`
 
 ## ✅ Autoevaluación
 
@@ -104,7 +116,7 @@ Lucky Numbers: 1
 
 Esta API debe tener dos endpoints, ambos devuelven JSON:
 
-### 1) Obten todos los miembros de la familia:
+### 1) Obtén todos los miembros de la familia:
 
 Devuelve todos los miembros de la familia.
 
@@ -154,7 +166,7 @@ REQUEST BODY (content_type: application/json):
     first_name: String,
     age: Int,
     lucky_numbers: [],
-    id: Int *opcional
+    id: Int *optional
 }
 
 RESPONSE (content_type: application/json):
@@ -190,3 +202,5 @@ body: {
 - Todas las solicitudes y respuestas deben estar en content/type: application/json
 - Los códigos de respuesta deben ser `200` para tener éxito,` 400` para una solicitud incorrecta o `404` para no encontrados.
 - Este ejercicio no incluye una base de datos, todo se debe hacer en la memoria RAM.
+
+Este y otros proyectos son usados para [aprender a programar](https://4geeksacademy.com/es/aprender-a-programar/aprender-a-programar-desde-cero) por parte de los alumnos de 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) realizado por [Alejandro Sánchez](https://twitter.com/alesanchezr) y muchos otros contribuyentes. Conoce más sobre nuestros [Curso de Programación](https://4geeksacademy.com/es/curso-de-programacion-desde-cero?lang=es) para convertirte en [Full Stack Developer](https://4geeksacademy.com/es/coding-bootcamps/desarrollador-full-stack/?lang=es), o nuestro [Data Science Bootcamp](https://4geeksacademy.com/es/coding-bootcamps/curso-datascience-machine-learning).
